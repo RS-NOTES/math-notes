@@ -48,6 +48,9 @@
     { src: 'assets/formulas/euler.svg', name: { zh: 'Euler恒等式', en: "Euler's identity" } },
     { src: 'assets/formulas/cauchy.svg', name: { zh: 'Cauchy积分公式', en: "Cauchy's integral formula" } },
     { src: 'assets/formulas/nullstellensatz.svg', name: { zh: 'Hilbert零点定理', en: "Hilbert's Nullstellensatz" } },
+    { src: 'assets/formulas/atiyah-singer.svg', name: { zh: 'Atiyah–Singer指标定理', en: 'Atiyah–Singer index theorem' } },
+    { src: 'assets/formulas/hodge.svg', name: { zh: 'Hodge分解定理', en: 'Hodge decomposition theorem' } },
+    { src: 'assets/formulas/yoneda.svg', name: { zh: 'Yoneda引理', en: 'Yoneda lemma' } },
   ];
   const LS_LANG = 'mathnotes-lang';
   const LS_THEME = 'mathnotes-theme';
