@@ -157,11 +157,11 @@ body[data-page="pdf"] main.wrap { max-width: 1100px; }
 .search input:focus { border-bottom-color: var(--accent); }
 .search-left input { text-align: left; }
 
-/* 首页著名公式轮播装饰 */
-.hero-formula { margin-top: 30px; transition: opacity 0.45s ease; }
+/* 首页著名公式轮播装饰（LaTeX 排版 SVG 图片） */
+.hero-formula { margin-top: 30px; transition: opacity 0.45s ease; color: var(--ink); }
 .hero-formula.fading { opacity: 0; }
-.hero-formula .katex-display { margin: 0; }
-.hero-formula .katex { font-size: 1.16em; }
+.hero-formula svg { height: 42px; width: auto; display: inline-block; }
+.hero-formula svg, .hero-formula svg * { fill: currentColor; }
 .formula-caption {
   margin: 10px 0 0;
   font-size: 0.76rem;

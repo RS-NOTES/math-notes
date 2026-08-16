@@ -40,14 +40,14 @@
       'cat.uncategorized': 'Uncategorized',
     },
   };
-  /* 首页著名公式装饰（轮播） */
+  /* 首页著名公式装饰（轮播，LaTeX 排版 SVG 图片） */
   const FORMULAS = [
-    { tex: '\\int_M K\\, dA = 2\\pi\\, \\chi(M)', name: { zh: 'Gauss–Bonnet定理', en: 'Gauss–Bonnet theorem' } },
-    { tex: '\\ell(D) - \\ell(K - D) = \\deg(D) - g + 1', name: { zh: 'Riemann–Roch定理', en: 'Riemann–Roch theorem' } },
-    { tex: '\\int_M d\\omega = \\int_{\\partial M} \\omega', name: { zh: 'Stokes公式', en: "Stokes' theorem" } },
-    { tex: 'e^{i\\pi} + 1 = 0', name: { zh: 'Euler恒等式', en: "Euler's identity" } },
-    { tex: 'f(a) = \\frac{1}{2\\pi i} \\oint_{\\gamma} \\frac{f(z)}{z - a}\\, dz', name: { zh: 'Cauchy积分公式', en: "Cauchy's integral formula" } },
-    { tex: '\\mathrm{I}(\\mathrm{V}(J)) = \\sqrt{J}', name: { zh: 'Hilbert零点定理', en: "Hilbert's Nullstellensatz" } },
+    { src: 'assets/formulas/gauss-bonnet.svg', name: { zh: 'Gauss–Bonnet定理', en: 'Gauss–Bonnet theorem' } },
+    { src: 'assets/formulas/riemann-roch.svg', name: { zh: 'Riemann–Roch定理', en: 'Riemann–Roch theorem' } },
+    { src: 'assets/formulas/stokes.svg', name: { zh: 'Stokes公式', en: "Stokes' theorem" } },
+    { src: 'assets/formulas/euler.svg', name: { zh: 'Euler恒等式', en: "Euler's identity" } },
+    { src: 'assets/formulas/cauchy.svg', name: { zh: 'Cauchy积分公式', en: "Cauchy's integral formula" } },
+    { src: 'assets/formulas/nullstellensatz.svg', name: { zh: 'Hilbert零点定理', en: "Hilbert's Nullstellensatz" } },
   ];
   const LS_LANG = 'mathnotes-lang';
   const LS_THEME = 'mathnotes-theme';
@@ -244,30 +244,32 @@
         location.href = 'notes.html' + (q ? '?q=' + encodeURIComponent(q) : '');
       });
     }
-    /* 著名公式轮播 */
-    if (typeof katex !== 'undefined') {
-      const wrap = $('#heroFormula');
-      const body = $('#heroFormulaBody');
-      const cap = $('#heroFormulaCaption');
-      if (wrap && body && cap) {
-        if (window.__formulaIdx == null) window.__formulaIdx = 0;
-        const show = (i) => {
-          window.__formulaIdx = i;
-          const f = FORMULAS[i % FORMULAS.length];
-          body.innerHTML = katex.renderToString(f.tex, { displayMode: true, throwOnError: false, strict: 'ignore' });
-          cap.textContent = f.name[lang] || f.name.zh;
-        };
-        show(window.__formulaIdx);
-        if (!window.__formulaTimer) {
-          window.__formulaTimer = setInterval(() => {
-            const next = (window.__formulaIdx + 1) % FORMULAS.length;
-            wrap.classList.add('fading');
-            setTimeout(() => {
-              show(next);
-              wrap.classList.remove('fading');
-            }, 450);
-          }, 5000);
-        }
+    /* 著名公式轮播（SVG 图片，所有浏览器显示一致，且不存在文本副本） */
+    const wrap = $('#heroFormula');
+    const body = $('#heroFormulaBody');
+    const cap = $('#heroFormulaCaption');
+    if (wrap && body && cap) {
+      if (window.__formulaIdx == null) window.__formulaIdx = 0;
+      if (!window.__svgCache) window.__svgCache = {};
+      const show = (i) => {
+        window.__formulaIdx = i;
+        const f = FORMULAS[i % FORMULAS.length];
+        if (window.__svgCache[f.src]) body.innerHTML = window.__svgCache[f.src];
+        cap.textContent = f.name[lang] || f.name.zh;
+      };
+      const pending = FORMULAS.filter((f) => !window.__svgCache[f.src]);
+      Promise.all(pending.map((f) =>
+        fetch(f.src).then((r) => (r.ok ? r.text() : '')).then((t) => { if (t) window.__svgCache[f.src] = t; }).catch(() => {})
+      )).then(() => show(window.__formulaIdx));
+      if (!window.__formulaTimer) {
+        window.__formulaTimer = setInterval(() => {
+          const next = (window.__formulaIdx + 1) % FORMULAS.length;
+          wrap.classList.add('fading');
+          setTimeout(() => {
+            show(next);
+            wrap.classList.remove('fading');
+          }, 450);
+        }, 5000);
       }
     }
   }
