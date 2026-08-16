@@ -348,6 +348,19 @@ body[data-page="pdf"] main.wrap { max-width: 1100px; }
 /* KaTeX */
 .katex { font-size: 1.07em; }
 .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; margin: 18px 0; }
+/* 隐藏 KaTeX 的无障碍 MathML 副本：防止它在部分浏览器中显示成第二行纯文本 */
+.katex-mathml {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
 
 /* ---------------- PDF 阅读 ---------------- */
 .main-fill { display: flex; flex-direction: column; }

@@ -142,7 +142,6 @@
           throwOnError: false,
           strict: 'ignore',
           trust: false,
-          output: 'html',
         });
       } catch (e) {
         out = esc(m.tex);
@@ -255,7 +254,7 @@
         const show = (i) => {
           window.__formulaIdx = i;
           const f = FORMULAS[i % FORMULAS.length];
-          body.innerHTML = katex.renderToString(f.tex, { displayMode: true, throwOnError: false, strict: 'ignore', output: 'html' });
+          body.innerHTML = katex.renderToString(f.tex, { displayMode: true, throwOnError: false, strict: 'ignore' });
           cap.textContent = f.name[lang] || f.name.zh;
         };
         show(window.__formulaIdx);
