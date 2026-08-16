@@ -248,14 +248,12 @@
     if (typeof katex !== 'undefined') {
       const wrap = $('#heroFormula');
       const body = $('#heroFormulaBody');
-      const cap = $('#heroFormulaCaption');
-      if (wrap && body && cap) {
+      if (wrap && body) {
         if (window.__formulaIdx == null) window.__formulaIdx = 0;
         const show = (i) => {
           window.__formulaIdx = i;
           const f = FORMULAS[i % FORMULAS.length];
           body.innerHTML = katex.renderToString(f.tex, { displayMode: true, throwOnError: false, strict: 'ignore' });
-          cap.textContent = f.name[lang] || f.name.zh;
         };
         show(window.__formulaIdx);
         if (!window.__formulaTimer) {

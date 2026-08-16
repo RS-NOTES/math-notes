@@ -160,15 +160,8 @@ body[data-page="pdf"] main.wrap { max-width: 1100px; }
 /* 首页著名公式轮播装饰 */
 .hero-formula { margin-top: 30px; transition: opacity 0.45s ease; }
 .hero-formula.fading { opacity: 0; }
-.hero-formula .katex-display { margin: 0 0 2px; }
+.hero-formula .katex-display { margin: 0; }
 .hero-formula .katex { font-size: 1.16em; }
-.formula-caption {
-  margin: 10px 0 0;
-  font-size: 0.76rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--faint);
-}
 
 .ornament {
   display: flex;
