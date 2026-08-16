@@ -1,11 +1,11 @@
 {
-  "siteTitle": "数学笔记",
-  "siteSubtitle": "Mathematical Notes",
+  "siteTitle": "RS的数学空间",
+  "siteSubtitle": "RS's Mathematical Space",
   "tagline": {
     "zh": "一名数学人的读书笔记与讲义：微分几何、代数与分析。",
     "en": "Reading notes and lecture notes: differential geometry, algebra, and analysis."
   },
-  "author": "笔记作者",
+  "author": "RS",
   "githubRepo": "RS-NOTES/math-notes",
   "defaultLang": "zh",
   "categories": [
@@ -18,7 +18,7 @@
     "基础与分析",
     "指南"
   ],
-  "builtAt": "2026-08-16T14:56:44.068Z",
+  "builtAt": "2026-08-16T16:25:32.337Z",
   "noteCount": 1,
   "pdfCount": 57
 }

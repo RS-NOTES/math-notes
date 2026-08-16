@@ -61,6 +61,6 @@ function notFound(res) {
   res.end('<!DOCTYPE html><html><body><h1>404</h1></body></html>');
 }
 server.listen(PORT, '127.0.0.1', () => {
-  console.log('数学笔记 · 本地预览已启动');
+  console.log('RS的数学空间 · 本地预览已启动');
   console.log(`打开浏览器访问: http://127.0.0.1:${PORT}`);
 });

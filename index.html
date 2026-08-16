@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>数学笔记</title>
-<meta name="description" content="数学笔记：微分几何、代数与分析的读书笔记与讲义。">
+<title>RS的数学空间</title>
+<meta name="description" content="RS的数学空间：微分几何、代数与分析的读书笔记与讲义。">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="home">
 <header class="site-head">
   <div class="wrap head-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">∫</span><span class="brand-name" data-site="title">数学笔记</span></a>
+    <a class="brand" href="index.html"><span class="brand-mark">∫</span><span class="brand-name" data-site="title">RS的数学空间</span></a>
     <nav class="nav">
       <a href="index.html" class="active" data-i18n="nav.home">首页</a>
       <a href="notes.html" data-i18n="nav.notes">笔记</a>
@@ -27,9 +27,13 @@
 
 <main class="wrap">
   <section class="hero">
-    <h1 class="hero-title" data-site="title">数学笔记</h1>
-    <p class="hero-sub" data-site="subtitle">Mathematical Notes</p>
+    <h1 class="hero-title" data-site="title">RS的数学空间</h1>
+    <p class="hero-sub" data-site="subtitle">RS's Mathematical Space</p>
     <p class="hero-tag" id="tagline">一名数学人的读书笔记与讲义：微分几何、代数与分析。</p>
+    <div class="hero-formula" id="heroFormula" aria-hidden="true">
+      <div id="heroFormulaBody"></div>
+      <p class="formula-caption" id="heroFormulaCaption"></p>
+    </div>
     <form class="search" id="searchForm" autocomplete="off">
       <input id="searchInput" type="search" placeholder="搜索标题、主题、标签…" data-i18n-ph="search.placeholder">
     </form>
@@ -55,7 +59,7 @@
 
 <footer class="site-foot">
   <div class="wrap foot-inner">
-    <span>© <span id="year"></span> <span data-site="author">笔记作者</span></span>
+    <span>© <span id="year"></span> <span data-site="author">RS</span></span>
     <span data-i18n="foot.rendered">以 KaTeX 排版</span>
     <a id="repoLink" hidden target="_blank" rel="noopener" data-i18n="foot.repo">GitHub</a>
   </div>
