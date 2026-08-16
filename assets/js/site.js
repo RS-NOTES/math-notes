@@ -42,12 +42,12 @@
   };
   /* 首页著名公式装饰（轮播） */
   const FORMULAS = [
-    { tex: '\\int_M K\\, dA = 2\\pi\\, \\chi(M)', name: { zh: '高斯–博内定理', en: 'Gauss–Bonnet theorem' } },
-    { tex: '\\ell(D) - \\ell(K - D) = \\deg(D) - g + 1', name: { zh: '黎曼–罗赫定理', en: 'Riemann–Roch theorem' } },
-    { tex: '\\int_M d\\omega = \\int_{\\partial M} \\omega', name: { zh: '斯托克斯公式', en: "Stokes' theorem" } },
-    { tex: 'e^{i\\pi} + 1 = 0', name: { zh: '欧拉恒等式', en: "Euler's identity" } },
-    { tex: 'f(a) = \\frac{1}{2\\pi i} \\oint_{\\gamma} \\frac{f(z)}{z - a}\\, dz', name: { zh: '柯西积分公式', en: "Cauchy's integral formula" } },
-    { tex: '\\mathrm{I}(\\mathrm{V}(J)) = \\sqrt{J}', name: { zh: '希尔伯特零点定理', en: "Hilbert's Nullstellensatz" } },
+    { tex: '\\int_M K\\, dA = 2\\pi\\, \\chi(M)', name: { zh: 'Gauss–Bonnet定理', en: 'Gauss–Bonnet theorem' } },
+    { tex: '\\ell(D) - \\ell(K - D) = \\deg(D) - g + 1', name: { zh: 'Riemann–Roch定理', en: 'Riemann–Roch theorem' } },
+    { tex: '\\int_M d\\omega = \\int_{\\partial M} \\omega', name: { zh: 'Stokes公式', en: "Stokes' theorem" } },
+    { tex: 'e^{i\\pi} + 1 = 0', name: { zh: 'Euler恒等式', en: "Euler's identity" } },
+    { tex: 'f(a) = \\frac{1}{2\\pi i} \\oint_{\\gamma} \\frac{f(z)}{z - a}\\, dz', name: { zh: 'Cauchy积分公式', en: "Cauchy's integral formula" } },
+    { tex: '\\mathrm{I}(\\mathrm{V}(J)) = \\sqrt{J}', name: { zh: 'Hilbert零点定理', en: "Hilbert's Nullstellensatz" } },
   ];
   const LS_LANG = 'mathnotes-lang';
   const LS_THEME = 'mathnotes-theme';
@@ -142,6 +142,7 @@
           throwOnError: false,
           strict: 'ignore',
           trust: false,
+          output: 'html',
         });
       } catch (e) {
         out = esc(m.tex);
@@ -248,12 +249,14 @@
     if (typeof katex !== 'undefined') {
       const wrap = $('#heroFormula');
       const body = $('#heroFormulaBody');
-      if (wrap && body) {
+      const cap = $('#heroFormulaCaption');
+      if (wrap && body && cap) {
         if (window.__formulaIdx == null) window.__formulaIdx = 0;
         const show = (i) => {
           window.__formulaIdx = i;
           const f = FORMULAS[i % FORMULAS.length];
-          body.innerHTML = katex.renderToString(f.tex, { displayMode: true, throwOnError: false, strict: 'ignore' });
+          body.innerHTML = katex.renderToString(f.tex, { displayMode: true, throwOnError: false, strict: 'ignore', output: 'html' });
+          cap.textContent = f.name[lang] || f.name.zh;
         };
         show(window.__formulaIdx);
         if (!window.__formulaTimer) {
