@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · 数学笔记</title>
+<meta name="description" content="关于本站。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="about">
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">∫</span><span class="brand-name" data-site="title">数学笔记</span></a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="notes.html" data-i18n="nav.notes">笔记</a>
+      <a href="pdfs.html" data-i18n="nav.pdfs">文献</a>
+      <a href="about.html" class="active" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="controls">
+      <button id="langBtn" type="button">EN</button>
+      <button id="themeBtn" type="button" aria-label="主题切换">☾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="prose" id="aboutView"></article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <span>© <span id="year"></span> <span data-site="author">笔记作者</span></span>
+    <span data-i18n="foot.rendered">以 KaTeX 排版</span>
+    <a id="repoLink" hidden target="_blank" rel="noopener" data-i18n="foot.repo">GitHub</a>
+  </div>
+</footer>
+<script src="assets/js/marked.umd.js"></script>
+<script src="assets/vendor/katex/katex.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

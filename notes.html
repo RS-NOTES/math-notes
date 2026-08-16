@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>笔记 · 数学笔记</title>
+<meta name="description" content="数学笔记：Markdown + LaTeX 写成的读书笔记。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="notes">
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">∫</span><span class="brand-name" data-site="title">数学笔记</span></a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <a href="notes.html" class="active" data-i18n="nav.notes">笔记</a>
+      <a href="pdfs.html" data-i18n="nav.pdfs">文献</a>
+      <a href="about.html" data-i18n="nav.about">关于</a>
+    </nav>
+    <div class="controls">
+      <button id="langBtn" type="button">EN</button>
+      <button id="themeBtn" type="button" aria-label="主题切换">☾</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <header class="page-head">
+    <h1 data-i18n="notes.title">笔记</h1>
+    <p class="page-sub" id="notesCount"></p>
+  </header>
+  <div class="search search-left">
+    <input id="noteSearch" type="search" placeholder="搜索标题、主题、标签…" data-i18n-ph="search.placeholder">
+  </div>
+  <div class="cat-chips" id="catChips"></div>
+  <div id="noteGroups"></div>
+  <p id="searchEmpty" class="empty" hidden data-i18n="search.empty">没有找到匹配的内容。</p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <span>© <span id="year"></span> <span data-site="author">笔记作者</span></span>
+    <span data-i18n="foot.rendered">以 KaTeX 排版</span>
+    <a id="repoLink" hidden target="_blank" rel="noopener" data-i18n="foot.repo">GitHub</a>
+  </div>
+</footer>
+<script src="assets/js/marked.umd.js"></script>
+<script src="assets/vendor/katex/katex.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

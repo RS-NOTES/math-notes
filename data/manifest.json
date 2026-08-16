@@ -1,0 +1,533 @@
+{
+  "generated": "2026-08-16T14:56:44.067Z",
+  "notes": [
+    {
+      "slug": "how-to",
+      "path": "content/notes/how-to.md",
+      "title": "如何编辑与上传笔记",
+      "date": null,
+      "category": "指南",
+      "tags": [
+        "指南",
+        "Markdown",
+        "LaTeX"
+      ],
+      "summary": "本网站的编辑与发布说明：如何新增、修改笔记，如何上传 PDF。"
+    }
+  ],
+  "pdfs": [
+    {
+      "slug": "李群",
+      "path": "content/pdfs/李群.pdf",
+      "title": "李群",
+      "category": "微分几何",
+      "tags": [],
+      "size": "284 KB",
+      "date": null
+    },
+    {
+      "slug": "主丛",
+      "path": "content/pdfs/主丛.pdf",
+      "title": "主丛",
+      "category": "微分几何",
+      "tags": [],
+      "size": "234 KB",
+      "date": null
+    },
+    {
+      "slug": "主丛_2_",
+      "path": "content/pdfs/主丛_2_.pdf",
+      "title": "主丛（2）",
+      "category": "微分几何",
+      "tags": [],
+      "size": "212 KB",
+      "date": null
+    },
+    {
+      "slug": "主丛的Chern-Weil同态",
+      "path": "content/pdfs/主丛的Chern-Weil同态.pdf",
+      "title": "主丛的Chern-Weil同态",
+      "category": "微分几何",
+      "tags": [],
+      "size": "286 KB",
+      "date": null
+    },
+    {
+      "slug": "Chern connections",
+      "path": "content/pdfs/Chern connections.pdf",
+      "title": "Chern Connections",
+      "category": "微分几何",
+      "tags": [],
+      "size": "107 KB",
+      "date": null
+    },
+    {
+      "slug": "curvature_of_a_curve",
+      "path": "content/pdfs/curvature_of_a_curve.pdf",
+      "title": "Curvature of a Curve",
+      "category": "微分几何",
+      "tags": [],
+      "size": "641 KB",
+      "date": null
+    },
+    {
+      "slug": "Differential Forms",
+      "path": "content/pdfs/Differential Forms.pdf",
+      "title": "Differential Forms",
+      "category": "微分几何",
+      "tags": [],
+      "size": "171 KB",
+      "date": null
+    },
+    {
+      "slug": "first_fundamental_form",
+      "path": "content/pdfs/first_fundamental_form.pdf",
+      "title": "First Fundamental Form",
+      "category": "微分几何",
+      "tags": [],
+      "size": "54 KB",
+      "date": null
+    },
+    {
+      "slug": "First_Variational_Formula_for_Length",
+      "path": "content/pdfs/First_Variational_Formula_for_Length.pdf",
+      "title": "First Variational Formula for Length",
+      "category": "微分几何",
+      "tags": [],
+      "size": "161 KB",
+      "date": null
+    },
+    {
+      "slug": "Gauss_Bonnet_Theorem",
+      "path": "content/pdfs/Gauss_Bonnet_Theorem.pdf",
+      "title": "Gauss Bonnet Theorem",
+      "category": "微分几何",
+      "tags": [],
+      "size": "665 KB",
+      "date": null
+    },
+    {
+      "slug": "Gauss_Lemma",
+      "path": "content/pdfs/Gauss_Lemma.pdf",
+      "title": "Gauss Lemma",
+      "category": "微分几何",
+      "tags": [],
+      "size": "187 KB",
+      "date": null
+    },
+    {
+      "slug": "Gauss_Theorema_Egregium",
+      "path": "content/pdfs/Gauss_Theorema_Egregium.pdf",
+      "title": "Gauss Theorema Egregium",
+      "category": "微分几何",
+      "tags": [],
+      "size": "137 KB",
+      "date": null
+    },
+    {
+      "slug": "Integral_Curves_and_Flows",
+      "path": "content/pdfs/Integral_Curves_and_Flows.pdf",
+      "title": "Integral Curves and Flows",
+      "category": "微分几何",
+      "tags": [],
+      "size": "285 KB",
+      "date": null
+    },
+    {
+      "slug": "Parametrizaed Curve",
+      "path": "content/pdfs/Parametrizaed Curve.pdf",
+      "title": "Parametrizaed Curve",
+      "category": "微分几何",
+      "tags": [],
+      "size": "817 KB",
+      "date": null
+    },
+    {
+      "slug": "regular_surface",
+      "path": "content/pdfs/regular_surface.pdf",
+      "title": "Regular Surface",
+      "category": "微分几何",
+      "tags": [],
+      "size": "344 KB",
+      "date": null
+    },
+    {
+      "slug": "reparametrization_of_a_curve",
+      "path": "content/pdfs/reparametrization_of_a_curve.pdf",
+      "title": "Reparametrization of a Curve",
+      "category": "微分几何",
+      "tags": [],
+      "size": "3.2 MB",
+      "date": null
+    },
+    {
+      "slug": "Ricci_Curvature",
+      "path": "content/pdfs/Ricci_Curvature.pdf",
+      "title": "Ricci Curvature",
+      "category": "微分几何",
+      "tags": [],
+      "size": "80 KB",
+      "date": null
+    },
+    {
+      "slug": "Second_Fundamental_Form",
+      "path": "content/pdfs/Second_Fundamental_Form.pdf",
+      "title": "Second Fundamental Form",
+      "category": "微分几何",
+      "tags": [],
+      "size": "91 KB",
+      "date": null
+    },
+    {
+      "slug": "Second_Fundamental_Form(古典微分几何)",
+      "path": "content/pdfs/Second_Fundamental_Form(古典微分几何).pdf",
+      "title": "Second Fundamental Form（古典微分几何）",
+      "category": "微分几何",
+      "tags": [],
+      "size": "56 KB",
+      "date": null
+    },
+    {
+      "slug": "space curves and Frenet frames",
+      "path": "content/pdfs/space curves and Frenet frames.pdf",
+      "title": "Space Curves and Frenet Frames",
+      "category": "微分几何",
+      "tags": [],
+      "size": "70 KB",
+      "date": null
+    },
+    {
+      "slug": "Symmetries_of_Curvature_tensor",
+      "path": "content/pdfs/Symmetries_of_Curvature_tensor.pdf",
+      "title": "Symmetries of Curvature Tensor",
+      "category": "微分几何",
+      "tags": [],
+      "size": "84 KB",
+      "date": null
+    },
+    {
+      "slug": "Tangent_map",
+      "path": "content/pdfs/Tangent_map.pdf",
+      "title": "Tangent Map",
+      "category": "微分几何",
+      "tags": [],
+      "size": "59 KB",
+      "date": null
+    },
+    {
+      "slug": "Tangent_Space",
+      "path": "content/pdfs/Tangent_Space.pdf",
+      "title": "Tangent Space",
+      "category": "微分几何",
+      "tags": [],
+      "size": "201 KB",
+      "date": null
+    },
+    {
+      "slug": "Riemann_Roch",
+      "path": "content/pdfs/Riemann_Roch.pdf",
+      "title": "Riemann Roch",
+      "category": "代数几何",
+      "tags": [],
+      "size": "103 KB",
+      "date": null
+    },
+    {
+      "slug": "Sheaf_Cohomology__Copy_",
+      "path": "content/pdfs/Sheaf_Cohomology__Copy_.pdf",
+      "title": "Sheaf Cohomology",
+      "category": "代数几何",
+      "tags": [],
+      "size": "146 KB",
+      "date": null
+    },
+    {
+      "slug": "交换幺环上的理想_2_",
+      "path": "content/pdfs/交换幺环上的理想_2_.pdf",
+      "title": "交换幺环上的理想（2）",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "154 KB",
+      "date": null
+    },
+    {
+      "slug": "交换幺环上的理想_remake_",
+      "path": "content/pdfs/交换幺环上的理想_remake_.pdf",
+      "title": "交换幺环上的理想（重制版）",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "64 KB",
+      "date": null
+    },
+    {
+      "slug": "局部化__1_",
+      "path": "content/pdfs/局部化__1_.pdf",
+      "title": "局部化 （1）",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "72 KB",
+      "date": null
+    },
+    {
+      "slug": "局部化_2",
+      "path": "content/pdfs/局部化_2.pdf",
+      "title": "局部化（2）",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "52 KB",
+      "date": null
+    },
+    {
+      "slug": "局部化_3_",
+      "path": "content/pdfs/局部化_3_.pdf",
+      "title": "局部化（3）",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "42 KB",
+      "date": null
+    },
+    {
+      "slug": "Chain_Conditions",
+      "path": "content/pdfs/Chain_Conditions.pdf",
+      "title": "Chain Conditions",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "170 KB",
+      "date": null
+    },
+    {
+      "slug": "Euler_Fermat定理",
+      "path": "content/pdfs/Euler_Fermat定理.pdf",
+      "title": "Euler–Fermat 定理",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "191 KB",
+      "date": null
+    },
+    {
+      "slug": "Going_up_and_Going_down",
+      "path": "content/pdfs/Going_up_and_Going_down.pdf",
+      "title": "Going Up and Going Down",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "196 KB",
+      "date": null
+    },
+    {
+      "slug": "Integral_dependence",
+      "path": "content/pdfs/Integral_dependence.pdf",
+      "title": "Integral Dependence",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "168 KB",
+      "date": null
+    },
+    {
+      "slug": "Nakayama_lemma",
+      "path": "content/pdfs/Nakayama_lemma.pdf",
+      "title": "Nakayama Lemma",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "65 KB",
+      "date": null
+    },
+    {
+      "slug": "Properties_of_Noetherian_and_Artinian",
+      "path": "content/pdfs/Properties_of_Noetherian_and_Artinian.pdf",
+      "title": "Properties of Noetherian and Artinian",
+      "category": "交换代数与数论",
+      "tags": [],
+      "size": "155 KB",
+      "date": null
+    },
+    {
+      "slug": "导出函子",
+      "path": "content/pdfs/导出函子.pdf",
+      "title": "导出函子",
+      "category": "代数与同调",
+      "tags": [],
+      "size": "204 KB",
+      "date": null
+    },
+    {
+      "slug": "范畴与函子重制",
+      "path": "content/pdfs/范畴与函子重制.pdf",
+      "title": "范畴与函子重制",
+      "category": "代数与同调",
+      "tags": [],
+      "size": "214 KB",
+      "date": null
+    },
+    {
+      "slug": "可表函子",
+      "path": "content/pdfs/可表函子.pdf",
+      "title": "可表函子",
+      "category": "代数与同调",
+      "tags": [],
+      "size": "126 KB",
+      "date": null
+    },
+    {
+      "slug": "exact_sequence",
+      "path": "content/pdfs/exact_sequence.pdf",
+      "title": "Exact Sequence",
+      "category": "代数与同调",
+      "tags": [],
+      "size": "64 KB",
+      "date": null
+    },
+    {
+      "slug": "Exterior_Power",
+      "path": "content/pdfs/Exterior_Power.pdf",
+      "title": "Exterior Power",
+      "category": "代数与同调",
+      "tags": [],
+      "size": "202 KB",
+      "date": null
+    },
+    {
+      "slug": "Tensor_Product",
+      "path": "content/pdfs/Tensor_Product.pdf",
+      "title": "Tensor Product",
+      "category": "代数与同调",
+      "tags": [],
+      "size": "76 KB",
+      "date": null
+    },
+    {
+      "slug": "共轭算子",
+      "path": "content/pdfs/共轭算子.pdf",
+      "title": "共轭算子",
+      "category": "泛函分析",
+      "tags": [],
+      "size": "157 KB",
+      "date": null
+    },
+    {
+      "slug": "紧算子",
+      "path": "content/pdfs/紧算子.pdf",
+      "title": "紧算子",
+      "category": "泛函分析",
+      "tags": [],
+      "size": "202 KB",
+      "date": null
+    },
+    {
+      "slug": "紧算子的谱",
+      "path": "content/pdfs/紧算子的谱.pdf",
+      "title": "紧算子的谱",
+      "category": "泛函分析",
+      "tags": [],
+      "size": "136 KB",
+      "date": null
+    },
+    {
+      "slug": "投影算子",
+      "path": "content/pdfs/投影算子.pdf",
+      "title": "投影算子",
+      "category": "泛函分析",
+      "tags": [],
+      "size": "202 KB",
+      "date": null
+    },
+    {
+      "slug": "线性算子的谱",
+      "path": "content/pdfs/线性算子的谱.pdf",
+      "title": "线性算子的谱",
+      "category": "泛函分析",
+      "tags": [],
+      "size": "170 KB",
+      "date": null
+    },
+    {
+      "slug": "Closable_Operators",
+      "path": "content/pdfs/Closable_Operators.pdf",
+      "title": "Closable Operators",
+      "category": "泛函分析",
+      "tags": [],
+      "size": "141 KB",
+      "date": null
+    },
+    {
+      "slug": "解析函数芽环",
+      "path": "content/pdfs/解析函数芽环.pdf",
+      "title": "解析函数芽环",
+      "category": "复分析",
+      "tags": [],
+      "size": "296 KB",
+      "date": null
+    },
+    {
+      "slug": "cousin问题",
+      "path": "content/pdfs/cousin问题.pdf",
+      "title": "Cousin 问题",
+      "category": "复分析",
+      "tags": [],
+      "size": "131 KB",
+      "date": null
+    },
+    {
+      "slug": "Geometry_of_C__n_",
+      "path": "content/pdfs/Geometry_of_C__n_.pdf",
+      "title": "Geometry of Cⁿ",
+      "category": "复分析",
+      "tags": [],
+      "size": "247 KB",
+      "date": null
+    },
+    {
+      "slug": "Holomorphic_Jacobian",
+      "path": "content/pdfs/Holomorphic_Jacobian.pdf",
+      "title": "Holomorphic Jacobian",
+      "category": "复分析",
+      "tags": [],
+      "size": "634 KB",
+      "date": null
+    },
+    {
+      "slug": "O_U_上的拓扑",
+      "path": "content/pdfs/O_U_上的拓扑.pdf",
+      "title": "𝒪_U 上的拓扑",
+      "category": "复分析",
+      "tags": [],
+      "size": "225 KB",
+      "date": null
+    },
+    {
+      "slug": "不等式",
+      "path": "content/pdfs/不等式.pdf",
+      "title": "不等式",
+      "category": "基础与分析",
+      "tags": [],
+      "size": "175 KB",
+      "date": null
+    },
+    {
+      "slug": "多元微积分_2_",
+      "path": "content/pdfs/多元微积分_2_.pdf",
+      "title": "多元微积分（2）",
+      "category": "基础与分析",
+      "tags": [],
+      "size": "167 KB",
+      "date": null
+    },
+    {
+      "slug": "选修课_映射及其相关__Copy_",
+      "path": "content/pdfs/选修课_映射及其相关__Copy_.pdf",
+      "title": "选修课：映射及其相关",
+      "category": "基础与分析",
+      "tags": [],
+      "size": "124 KB",
+      "date": null
+    },
+    {
+      "slug": "样板 (2)",
+      "path": "content/pdfs/样板 (2).pdf",
+      "title": "样板（2）",
+      "category": "基础与分析",
+      "tags": [],
+      "size": "99 KB",
+      "date": null
+    }
+  ]
+}

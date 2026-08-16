@@ -1,0 +1,24 @@
+{
+  "siteTitle": "数学笔记",
+  "siteSubtitle": "Mathematical Notes",
+  "tagline": {
+    "zh": "一名数学人的读书笔记与讲义：微分几何、代数与分析。",
+    "en": "Reading notes and lecture notes: differential geometry, algebra, and analysis."
+  },
+  "author": "笔记作者",
+  "githubRepo": "RS-NOTES/math-notes",
+  "defaultLang": "zh",
+  "categories": [
+    "微分几何",
+    "代数几何",
+    "交换代数与数论",
+    "代数与同调",
+    "泛函分析",
+    "复分析",
+    "基础与分析",
+    "指南"
+  ],
+  "builtAt": "2026-08-16T14:56:44.068Z",
+  "noteCount": 1,
+  "pdfCount": 57
+}
