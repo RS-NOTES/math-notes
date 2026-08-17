@@ -47,6 +47,9 @@
   --line-strong: #c9c5bb;
   --accent: #20548e;
   --code-bg: #f1efe9;
+  --geo-fill-a: #b9b4a7;
+  --geo-fill-b: #e7e4da;
+  --geo-grid: #d8d4c9;
   --font-serif: 'STIX Two Text', 'Latin Modern Roman', Georgia, 'Times New Roman',
     'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', SimSun, serif;
   --font-mono: 'Cascadia Code', 'JetBrains Mono', Consolas, 'Courier New', monospace;
@@ -60,6 +63,9 @@ html.dark {
   --line-strong: #45423b;
   --accent: #8fb7e8;
   --code-bg: #201f1c;
+  --geo-fill-a: #4d4a42;
+  --geo-fill-b: #34322c;
+  --geo-grid: #3e3b34;
 }
 
 * { box-sizing: border-box; }
@@ -169,6 +175,33 @@ body[data-page="pdf"] main.wrap { max-width: 1100px; }
   text-transform: uppercase;
   color: var(--faint);
 }
+
+/* 首页几何速写图廊（TikZ 绘制 SVG，随明暗主题变色） */
+.geo-sub { color: var(--muted); font-size: 0.9em; margin: -8px 0 20px; }
+.geo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 28px 22px;
+}
+.geo-fig {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.geo-fig svg {
+  height: 132px;
+  width: auto;
+  max-width: 100%;
+  fill: currentColor;
+}
+.geo-fig [data-fill='a'] { fill: var(--geo-fill-a); }
+.geo-fig [data-fill='b'] { fill: var(--geo-fill-b); }
+.geo-fig [data-stroke='b'] { stroke: var(--geo-grid); }
+.geo-cap { margin: 12px 0 0; font-size: 0.85rem; line-height: 1.5; }
+.geo-name { display: block; font-weight: 600; }
+.geo-note { display: block; color: var(--muted); font-size: 0.95em; }
 
 .ornament {
   display: flex;
