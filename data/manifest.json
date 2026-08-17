@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T16:25:32.335Z",
+  "generated": "2026-08-17T09:30:39.583Z",
   "notes": [
     {
       "slug": "how-to",
@@ -50,6 +50,20 @@
       "category": "微分几何",
       "tags": [],
       "size": "286 KB",
+      "date": null
+    },
+    {
+      "slug": "deRham同调理论概述",
+      "path": "content/pdfs/deRham同调理论概述.pdf",
+      "title": "An Overview of de Rham Cohomology Theory",
+      "category": "微分几何",
+      "tags": [
+        "de Rham",
+        "上同调",
+        "微分形式",
+        "Poincaré 对偶"
+      ],
+      "size": "451 KB",
       "date": null
     },
     {

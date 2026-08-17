@@ -2,6 +2,7 @@
   "_readme": "可选：为 PDF 补充标题、分类与标签。键 = 文件名，缺省时按文件名自动推断。例如：\"fixed_point.pdf\": { \"title\": \"压缩映射原理\", \"category\": \"泛函分析\", \"tags\": [\"不动点\"] }",
   "Euler_Fermat定理.pdf": { "title": "Euler–Fermat 定理" },
   "cousin问题.pdf": { "title": "Cousin 问题" },
+  "deRham同调理论概述.pdf": { "title": "An Overview of de Rham Cohomology Theory", "category": "微分几何", "tags": ["de Rham", "上同调", "微分形式", "Poincaré 对偶"] },
   "Second_Fundamental_Form(古典微分几何).pdf": { "title": "Second Fundamental Form（古典微分几何）" },
   "选修课_映射及其相关__Copy_.pdf": { "title": "选修课：映射及其相关" }
 }
