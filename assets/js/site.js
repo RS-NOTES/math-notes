@@ -12,7 +12,7 @@
       'search.placeholder': '搜索标题、主题、标签…',
       'home.categories': '分类', 'home.recent': '最近笔记', 'home.papers': '文献',
       'home.papers.more': '全部 {n} 篇文献', 'home.notes.more': '全部笔记',
-      'home.geo': '几何速写', 'home.geo.sub': '微分流形 · Riemann 流形 · 复流形',
+      'home.geo': '几何速写', 'home.geo.sub': '微分几何与代数拓扑',
       'notes.title': '笔记', 'notes.count': '共 {n} 篇', 'notes.all': '全部',
       'pdfs.title': '文献', 'pdfs.count': '共 {n} 篇', 'pdfs.all': '全部',
       'note.back': '← 返回笔记', 'note.edit': '在 GitHub 上编辑此页',
@@ -29,7 +29,7 @@
       'search.placeholder': 'Search titles, topics, tags…',
       'home.categories': 'Categories', 'home.recent': 'Recent Notes', 'home.papers': 'Papers',
       'home.papers.more': 'All {n} papers', 'home.notes.more': 'All notes',
-      'home.geo': 'Geometry Sketches', 'home.geo.sub': 'Manifolds · Riemannian · Complex',
+      'home.geo': 'Geometry Sketches', 'home.geo.sub': 'Differential geometry and algebraic topology',
       'notes.title': 'Notes', 'notes.count': '{n} notes', 'notes.all': 'All',
       'pdfs.title': 'Papers', 'pdfs.count': '{n} papers', 'pdfs.all': 'All',
       'note.back': '← Back to Notes', 'note.edit': 'Edit on GitHub',
@@ -57,11 +57,11 @@
   /* 首页几何速写图廊（TikZ 绘制的微分几何示意图，SVG 图片，双语图注） */
   const GEOFIGS = [
     { src: 'assets/figures/charts.svg', name: { zh: '坐标卡与图册', en: 'Charts and an atlas' }, note: { zh: '开覆盖、坐标卡与转移映射', en: 'Coordinate charts and transition maps' } },
-    { src: 'assets/figures/tangent.svg', name: { zh: '切空间', en: 'Tangent space' }, note: { zh: '流形在一点的线性近似', en: 'Linear approximation at a point' } },
+    { src: 'assets/figures/covering.svg', name: { zh: '复叠空间', en: 'Covering space' }, note: { zh: '复叠映射 p: ℝ→S¹ 与环路的提升', en: 'The covering map p: ℝ→S¹ and lifts of loops' } },
     { src: 'assets/figures/geodesic.svg', name: { zh: '测地线', en: 'Geodesics' }, note: { zh: '曲面上连接 A、B 的「最直」曲线 γ', en: 'The “straightest” curve γ from A to B' } },
     { src: 'assets/figures/curvature.svg', name: { zh: '曲率', en: 'Curvature' }, note: { zh: '球面 K>0 与鞍面 K<0', en: 'Sphere with K>0, saddle with K<0' } },
     { src: 'assets/figures/riemann-sphere.svg', name: { zh: '黎曼球面', en: 'Riemann sphere' }, note: { zh: '球极投影与无穷远点', en: 'Stereographic projection and the point at infinity' } },
-    { src: 'assets/figures/torus.svg', name: { zh: '复环面', en: 'Complex torus' }, note: { zh: '格 Λ 的基本平行四边形（对边粘合）', en: 'Lattice Λ and its fundamental parallelogram' } },
+    { src: 'assets/figures/homotopy.svg', name: { zh: '基本群', en: 'Fundamental group' }, note: { zh: 'π₁(ℝ²∖{0})≅ℤ：α 绕洞一周，β 零伦', en: 'π₁(ℝ²∖{0})≅ℤ: α winds once, β is null-homotopic' } },
   ];
   const LS_LANG = 'mathnotes-lang';
   const LS_THEME = 'mathnotes-theme';
