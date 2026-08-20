@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T10:00:02.198Z",
+  "generated": "2026-08-20T16:34:25.465Z",
   "notes": [
     {
       "slug": "how-to",
@@ -64,6 +64,23 @@
         "Poincaré 对偶"
       ],
       "size": "443 KB",
+      "date": null
+    },
+    {
+      "slug": "CharacteristicClasses示性类讲义",
+      "path": "content/pdfs/CharacteristicClasses示性类讲义.pdf",
+      "title": "Characteristic Classes of Vector and Principal Bundles",
+      "category": "微分几何",
+      "tags": [
+        "示性类",
+        "Chern 类",
+        "Stiefel–Whitney 类",
+        "Euler 类",
+        "Pontryagin 类",
+        "Chern–Weil 理论",
+        "分类空间"
+      ],
+      "size": "338 KB",
       "date": null
     },
     {
