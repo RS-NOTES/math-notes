@@ -513,11 +513,13 @@
     let zoom = 1, fitMode = false, twoUp = false, sideMode = null;
 
     try {
-      pdfjs = await import('assets/vendor/pdfjs/pdf.min.mjs');
-      pdfjs.GlobalWorkerOptions.workerSrc = 'assets/vendor/pdfjs/pdf.worker.min.mjs';
+      pdfjs = (typeof pdfjsLib !== 'undefined') ? pdfjsLib : (globalThis.pdfjsLib || null);
+      if (!pdfjs) throw new Error('pdfjsLib not loaded');
+      pdfjs.GlobalWorkerOptions.workerSrc = 'assets/vendor/pdfjs/pdf.worker.min.js';
       doc = await pdfjs.getDocument(p.path).promise;
     } catch (e) {
-      loading.textContent = t('pdf.err');
+      console.error('[pdf-viewer]', e);
+      fallbackIframe(p);
       return;
     }
     numPages = doc.numPages;
@@ -695,6 +697,13 @@
       else if (e.key === '+' || e.key === '=') { $('#tbZoomIn').click(); }
       else if (e.key === '-') { $('#tbZoomOut').click(); }
     });
+  }
+
+  /* 加载失败时回退到浏览器内置阅读器，保证文献始终可读 */
+  function fallbackIframe(p) {
+    const app = $('#pdfApp');
+    if (!app) return;
+    app.outerHTML = '<iframe class="pdf-frame" src="' + esc(p.path) + '" title="' + esc(p.title) + '"></iframe>';
   }
 
   /* ---------------- 关于 ---------------- */
